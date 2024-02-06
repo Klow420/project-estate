@@ -14,6 +14,7 @@ import {
     FaParking,
     FaShare
   } from 'react-icons/fa';
+import Contact from '../components/Contact';
     
 
 export default function Listing() {
@@ -47,7 +48,7 @@ export default function Listing() {
         };
         fetchListing()
     }, [params.listingId]);
-    console.log(loading);
+    
     return (
         <main>
             {loading && <p className='text-center my-7 text-2xl'>Loading...</p>}
@@ -134,7 +135,11 @@ export default function Listing() {
                                 {listing.furnished ? 'Furnished' : 'Unfurnished'}
                             </li>
                         </ul>
-                        <button className='bg-slate-700 rounded-lg text-white p-3 uppercase hover:opacity-90'>Contact landlord</button>
+                        {currentUser && listing.userRef !== currentUser._id && !contact && (
+                            <button onClick={()=> setContact(true)} className='bg-slate-700 rounded-lg text-white p-3 uppercase hover:opacity-90'>Contact landlord</button>
+                        )}
+                        {contact && <Contact listing={listing}/>}
+                        
 
                     </div>
                 </div>
