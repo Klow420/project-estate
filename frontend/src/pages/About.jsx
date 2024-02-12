@@ -11,8 +11,7 @@ export default function About() {
       <p className='mb-4 text-slate-600'>We inform you that this application is a test application that collects certain personal data when creating a user account. The data collected includes username, email, image and password. This data is collected for the purpose of this data is collected to create an account for the user to have access to the application to create real estate.</p>
       <p className='mb-4 text-slate-600'>By using this application, you expressly consent to the collection and processing of your personal data as described in this privacy policy.</p>
       <p className='mb-4 text-slate-600'>Personal data collected will be retained for a period necessary for the purposes for which it was collected, or as long as required by law. We are committed to respecting the data retention limitation principles of the GDPR.</p>
-      <p className='mb-4 text-slate-600'>In accordance with the GDPR, you have the right to access your personal data, rectify it, delete it, limit its processing and transfer it to another data controller. To exercise these rights or for any questions regarding our privacy policy, please contact us at [email address or other contact method]."</p>
-      <p className='mb-4 text-slate-600'>Also make sure your app is compliant with other GDPR requirements, such as securing data and data breach notification. It is recommended to consult a data protection specialist to ensure that your application fully complies with legal data protection requirements.</p>
+      <p className='mb-4 text-slate-600'>In accordance with the GDPR, you have the right to access your personal data, rectify it, delete it, limit its processing and transfer it to another data controller. To exercise these rights or for any questions regarding our privacy policy, please contact us at [email address or other contact method].</p>
 
     </div>
   )
