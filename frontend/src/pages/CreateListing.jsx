@@ -206,7 +206,7 @@ export default function CreateListing() {
                             </div>
                     })
                 }
-                <button disabled={loading || uploading} className='p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80 mt-2'>{loading ? 'Creating...' : 'Create an real estate ad'}</button>
+                <button disabled={loading || uploading} className='p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80 mt-2'>{loading ? 'Creating...' : 'Create a real estate ad'}</button>
                 {error && <p className='text-red-700 text-sm'>{error}</p>}
             </div>
         </form>
