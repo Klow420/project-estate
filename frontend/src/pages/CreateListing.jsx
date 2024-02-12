@@ -133,7 +133,7 @@ export default function CreateListing() {
     }
   return (
     <main className='p-3 max-w-4xl mx-auto'>
-        <h1 className='text-3xl font-semibold text-center my-7'>Create a Listing</h1>
+        <h1 className='text-3xl font-semibold text-center my-7'>Create a Real Estate Ad</h1>
         <form onSubmit={handleSubmit} className='flex flex-col sm:flex-row gap-4'>
             <div className='flex flex-col gap-4 flex-1'>
                 <input type="text" placeholder='Name' className='border p-3 rounded-lg' id='name' maxLength='62' minLength='10' required onChange={handleChange} value={formData.name}/>
@@ -206,7 +206,7 @@ export default function CreateListing() {
                             </div>
                     })
                 }
-                <button disabled={loading || uploading} className='p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80 mt-2'>{loading ? 'Creating...' : 'Create listing'}</button>
+                <button disabled={loading || uploading} className='p-3 bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 disabled:opacity-80 mt-2'>{loading ? 'Creating...' : 'Create an real estate ad'}</button>
                 {error && <p className='text-red-700 text-sm'>{error}</p>}
             </div>
         </form>

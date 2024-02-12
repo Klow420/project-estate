@@ -54,7 +54,7 @@ export default function Home() {
           place easily!
         </h1>
         <div className="text-gray-400 text-xs sm:text-sm">
-          RunEstate is the best application to find your next perfect place to live.
+          RunUrEstate is the best application to find your next perfect place to live. Manage your real estate whether for sale or rental.
           <br />
           We have a wide range of goods for you to choose from.
         </div>
