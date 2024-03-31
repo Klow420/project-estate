@@ -39,7 +39,7 @@ export const signin = async (req, res, next) => {
     // Vérification du token reCAPTCHA
     try {
         const recaptchaResponse = await axios.post(
-            `https://www.google.com/recaptcha/api/siteverify?secret=${YOUR_RECAPTCHA_SECRET}&response=${recaptchaToken}`
+            `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.YOUR_RECAPTCHA_SECRET}&response=${recaptchaToken}`
         );
         const { success } = recaptchaResponse.data;
         if (!success) {
